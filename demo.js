@@ -7,8 +7,6 @@ const maxAllowedChars = productNameInputElement.maxLength;
 
 function updateRemainingCharacters(event) {
   // remainingCharsElement.style.color = "green";
-  remainingCharsElement.classList.remove("warning");
-  productNameInputElement.classList.remove("warning");
 
   const enteredText = event.target.value;
   const charsLeft = maxAllowedChars - enteredText.length;
@@ -18,6 +16,9 @@ function updateRemainingCharacters(event) {
     // remainingCharsElement.style.color = "red";
     remainingCharsElement.classList.add("warning");
     productNameInputElement.classList.add("warning");
+  } else {
+    remainingCharsElement.classList.remove("warning");
+    productNameInputElement.classList.remove("warning");
   }
   console.log(charsLeft);
 }
