@@ -12,3 +12,11 @@ if (isLoggedIn) {
 if (!isLoggedIn) {
   console.log("User is NOT logged in!");
 }
+
+let enteredUserName = "";
+// if (enteredUserName.length > 0) {
+//   console.log("Input is valid!");
+// }
+if (enteredUserName) {
+  console.log("Input is valid!");
+}
