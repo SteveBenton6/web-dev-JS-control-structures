@@ -3,3 +3,12 @@
 for (let i = 0; i < 10; i++) {
   console.log(i);
 }
+
+const users = ["Tanya", "Kartel", "Charmaine"];
+for (const user of users) {
+  console.log(user);
+}
+
+for (let i = 0; i < users.length; i++) {
+  console.log(users[i]);
+}
