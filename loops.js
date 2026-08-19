@@ -12,3 +12,12 @@ for (const user of users) {
 for (let i = 0; i < users.length; i++) {
   console.log(users[i]);
 }
+
+const loggedInUser = {
+  name: "Kartel",
+  age: 36,
+  isAdmin: true,
+};
+for (const key in loggedInUser) {
+  console.log(`${key}: ${loggedInUser[key]}`);
+}
