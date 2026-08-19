@@ -21,3 +21,9 @@ const loggedInUser = {
 for (const key in loggedInUser) {
   console.log(`${key}: ${loggedInUser[key]}`);
 }
+
+let isFinished = false;
+while (!isFinished) {
+  isFinished = confirm("Do you want to quit?");
+}
+console.log("Done!");
